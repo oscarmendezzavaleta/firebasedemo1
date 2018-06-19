@@ -1,7 +1,6 @@
 package com.example.pcoscar.firebasedemo1;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -10,9 +9,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @BindView(R.id.marca) TextView txtmarca;
     @BindView(R.id.dueno) TextView txtdueno;
@@ -24,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(getLayoutId());
 
-        ButterKnife.bind(this);
+
 
  /*
         FirebaseDatabase database=FirebaseDatabase.getInstance();
@@ -48,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
         */
 
     }
-
+    public int getLayoutId(){
+        return R.layout.activity_main;
+    }
    public void Guardar (View view){
        FirebaseDatabase database=FirebaseDatabase.getInstance();
        DatabaseReference tutorialRef =database.getReference(FirebaseReference.TUTORIAL_REFERENCE);
