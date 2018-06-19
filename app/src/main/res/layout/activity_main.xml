@@ -10,10 +10,59 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
         android:onClick="Guardar"
         android:text="Agregar"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puerta" />
+
+    <EditText
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Ingresa Marca"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dueno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Ingresa Dueño"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marca" />
+
+    <EditText
+        android:id="@+id/rueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Ruedas"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueno" />
+
+    <EditText
+        android:id="@+id/puerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Puertas"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rueda" />
+
 </android.support.constraint.ConstraintLayout>
