@@ -14,7 +14,6 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtusuario" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signin_button"
         android:layout_width="215dp"
         android:layout_height="43dp"
         android:layout_marginStart="84dp"
@@ -38,4 +37,14 @@
         android:text="Login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtpassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:text="Registrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_button" />
 </android.support.constraint.ConstraintLayout>
